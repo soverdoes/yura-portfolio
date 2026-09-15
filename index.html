@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오유라 | UI/UX Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">OH YURA</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-right">
+        <nav id="nav">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="assets/오유라_포트폴리오.pdf" download class="dl-btn">↓ <span>포트폴리오</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero-pin-wrap">
+    <div class="hero-pin-sticky">
+    <div class="section hero">
+      <div class="blob blob-blue"></div>
+      <div class="blob blob-lime"></div>
+      <span class="hero-watermark">DESIGN</span>
+
+      <div class="hero-counter reveal">
+        <span id="counterNum">00</span>
+        <span class="hero-counter-label">PROJECTS<br />DONE</span>
+      </div>
+
+      <div class="hero-collage" id="heroCollage">
+        <div class="collage-item item-1"><img src="assets/projects/well-thetak.jpg" alt="" /></div>
+        <div class="collage-item item-2"><img src="assets/projects/othetak.jpg" alt="" /></div>
+        <div class="collage-item item-3"><img src="assets/projects/olayo.jpg" alt="" /></div>
+        <div class="collage-item item-4"><img src="assets/projects/abee.jpg" alt="" /></div>
+        <div class="collage-item item-5"><img src="assets/projects/poca-cover.jpg" alt="" /></div>
+        <div class="collage-item item-6"><img src="assets/projects/icya-cover.jpg" alt="" /></div>
+        <div class="collage-item item-7"><img src="assets/projects/cpass-app.jpg" alt="" /></div>
+        <div class="collage-item item-8"><img src="assets/projects/foodtech.jpg" alt="" /></div>
+        <div class="collage-item item-9"><img src="assets/projects/well-thetak.jpg" alt="" /></div>
+        <div class="collage-item item-10"><img src="assets/projects/olayo.jpg" alt="" /></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-inner">
+          <p class="tagline reveal">Flexible thinking</p>
+          <h1 class="reveal">
+            사용자 흐름을<br />
+            설계하는<br />
+            <span class="signature">오유라<span class="dot">.</span></span>
+          </h1>
+          <p class="hero-desc reveal">6년 4개월간 웹·앱 UI/UX와 브랜딩을 아우르며 42개 이상의 프로젝트를 진행했습니다. 대담하고 전략적으로, 유연하게 사용자 흐름을 설계합니다.</p>
+          <div class="hero-links reveal">
+            <a href="work.html" class="btn btn-primary">Work 보기 →</a>
+            <a href="contact.html" class="btn btn-outline">연락하기</a>
+            <a href="assets/오유라_포트폴리오.pdf" download class="btn btn-ghost">포트폴리오 다운로드 ↓</a>
+          </div>
+          <div class="hero-line"><span></span></div>
+        </div>
+      </div>
+
+      <svg class="hero-dashes" viewBox="0 0 1600 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,80 C 200,10 400,140 700,60 C 1000,-10 1300,120 1600,40" fill="none" stroke="var(--accent-2)" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
+      </svg>
+    </div>
+    </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>UI/UX DESIGNER</span><span class="marquee-dot">✦</span>
+        <span>FLEXIBLE THINKER</span><span class="marquee-dot">✦</span>
+        <span>ENTJ · 대담한 통솔자</span><span class="marquee-dot">✦</span>
+        <span>6년 4개월 · 42+ PROJECTS</span><span class="marquee-dot">✦</span>
+        <span>UI/UX DESIGNER</span><span class="marquee-dot">✦</span>
+        <span>FLEXIBLE THINKER</span><span class="marquee-dot">✦</span>
+        <span>ENTJ · 대담한 통솔자</span><span class="marquee-dot">✦</span>
+        <span>6년 4개월 · 42+ PROJECTS</span><span class="marquee-dot">✦</span>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <section class="section stats-section">
+      <div class="container">
+        <p class="eyebrow-tag reveal">(01) BY THE NUMBERS</p>
+        <div class="stat-row reveal">
+          <div class="stat stat-a">
+            <span class="stat-icon">↗</span>
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">YEARS<br />EXPERIENCE</span>
+          </div>
+          <div class="stat stat-b">
+            <span class="stat-icon">✦</span>
+            <span class="stat-num" data-count="42">0</span>
+            <span class="stat-label">PROJECTS<br />DONE</span>
+          </div>
+          <div class="stat stat-c">
+            <span class="stat-icon">◆</span>
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">COMPANIES<br />WORKED</span>
+          </div>
+          <div class="stat stat-d">
+            <span class="stat-icon">★</span>
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">DESIGN<br />AWARDS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>PROBLEM SOLVER</span><span class="marquee-dot">✦</span>
+        <span>USER-CENTERED</span><span class="marquee-dot">✦</span>
+        <span>후회 없는 삶을 살자</span><span class="marquee-dot">✦</span>
+        <span>NO REGRETS DESIGN</span><span class="marquee-dot">✦</span>
+        <span>PROBLEM SOLVER</span><span class="marquee-dot">✦</span>
+        <span>USER-CENTERED</span><span class="marquee-dot">✦</span>
+        <span>후회 없는 삶을 살자</span><span class="marquee-dot">✦</span>
+        <span>NO REGRETS DESIGN</span><span class="marquee-dot">✦</span>
+      </div>
+    </div>
+
+    <!-- Signature Work -->
+    <section class="section signature-section">
+      <span class="bg-number">02</span>
+      <div class="container">
+        <p class="eyebrow-tag reveal">(02) SIGNATURE WORK</p>
+        <div class="section-head reveal">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Signature<br /><span class="accent-text">Work</span></h2>
+        </div>
+      </div>
+
+      <div class="sig-list">
+        <a class="sig-row type-overlay reveal" href="assets/projects/olayo.jpg" target="_blank" rel="noopener">
+          <div class="sig-media">
+            <img src="assets/projects/olayo.jpg" alt="Olayo" />
+          </div>
+          <div class="sig-card">
+            <span class="sig-tag">DASHBOARD · UX/UI 100%</span>
+            <h3>Olayo</h3>
+            <p>스마트 매장 AI 대시보드 · 2024</p>
+          </div>
+        </a>
+
+        <a class="sig-row type-split reveal" href="assets/projects/othetak.jpg" target="_blank" rel="noopener">
+          <div class="sig-text">
+            <span class="sig-tag">E-COMMERCE · UX/UI 90%</span>
+            <h3>Othetak</h3>
+            <p>미니멀하고 트렌디한 통합 식품정보 플랫폼</p>
+            <span class="sig-year">2024</span>
+          </div>
+          <div class="sig-media">
+            <img src="assets/projects/othetak.jpg" alt="Othetak" />
+          </div>
+        </a>
+
+        <a class="sig-row type-split reverse reveal" href="assets/projects/icya-cover.jpg" target="_blank" rel="noopener">
+          <div class="sig-media">
+            <img src="assets/projects/icya-cover.jpg" alt="Incheon Yacht Academy" />
+          </div>
+          <div class="sig-text">
+            <span class="sig-tag">BRANDING · 개인 수주</span>
+            <h3>Incheon Yacht<br />Academy</h3>
+            <p>다이나믹하고 익사이팅한 요트 브랜드 아이덴티티</p>
+            <span class="sig-year">2022</span>
+          </div>
+        </a>
+
+        <a class="sig-row type-overlay align-right reveal" href="assets/projects/abee.jpg" target="_blank" rel="noopener">
+          <div class="sig-media">
+            <img src="assets/projects/abee.jpg" alt="ABEE" />
+          </div>
+          <div class="sig-card">
+            <span class="sig-tag">REWARD APP · 디자인 100%</span>
+            <h3>ABEE</h3>
+            <p>광고보고 포인트 쌓는 리워드 플랫폼 · 2022–2023</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="hero-links reveal sig-cta">
+          <a href="work.html" class="btn btn-primary">전체 프로젝트 보기 (8) →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section contact-section">
+      <span class="bg-number bg-number-light">03</span>
+      <div class="container contact-inner reveal">
+        <h2 class="contact-title">Let's work<br />together<span class="dot">.</span></h2>
+        <p>새로운 기회와 협업을 기다리고 있습니다.</p>
+        <div class="contact-actions">
+          <a href="contact.html" class="btn btn-primary" style="background:#fff;color:var(--accent);">Contact 페이지로 →</a>
+          <a href="mailto:ura0428@gmail.com" class="btn btn-outline">ura0428@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Oh Yura. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="assets/오유라_포트폴리오.pdf" download>포트폴리오 다운로드</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" id="toTop" aria-label="맨 위로">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

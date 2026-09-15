@@ -12,6 +12,43 @@ if (navToggle && nav) {
   });
 }
 
+/* Lightbox — project image links open fit-to-width in-page instead
+   of the browser's native fit-to-height image viewer */
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+if (lightbox && lightboxImg && lightboxClose) {
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+  }
+
+  document.querySelectorAll('a[href*="/assets/projects/"], a[href^="assets/projects/"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const img = link.querySelector('img');
+      openLightbox(link.getAttribute('href'), img ? img.alt : '');
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+}
+
 /* Scroll reveal */
 const revealEls = document.querySelectorAll('.reveal');
 

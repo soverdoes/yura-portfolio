@@ -108,6 +108,19 @@ img {
   }
 }
 
+/* Contact page has a solid blue background — use a visible cursor color */
+.contact-page .cursor-dot {
+  background: #fff;
+}
+
+.contact-page .cursor-ring {
+  border-color: #fff;
+}
+
+.contact-page .cursor-ring.hover {
+  border-color: var(--accent-2);
+}
+
 /* Scroll progress */
 .scroll-progress {
   position: fixed;
@@ -1813,4 +1826,55 @@ footer {
     padding: 16px 24px;
     gap: 16px;
   }
+}
+
+/* Lightbox — shows project images fit-to-width instead of the
+   browser's native fit-to-height image viewer */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 11, 14, 0.94);
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 64px 20px;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.open {
+  display: flex;
+}
+
+.lightbox-img {
+  width: min(1100px, 92vw);
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: var(--text);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2001;
+  transition: transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.08);
 }
